@@ -2,6 +2,7 @@ package com.example.demo;
 
 import lombok.Data;
 import org.springframework.data.annotation.Id;
+import org.springframework.data.mongodb.core.index.Indexed;
 import org.springframework.data.mongodb.core.mapping.Document;
 
 import java.math.BigDecimal;
@@ -16,6 +17,7 @@ public class Student {
     private String id;
     private String firstname;
     private String lastname;
+    @Indexed(unique = true)
     private String email;
     private Gender gender;
     private Address address;
