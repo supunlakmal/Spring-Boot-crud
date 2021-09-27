@@ -43,9 +43,6 @@ public class DemoApplication {
 
 	usingMongoTemplateAndQuery(repository, mongoTemplate, email, student);
 
-//			repository.findStudentByEmail(email).orElse(student1 -> {
-//				System.out.println(student + "already exists");
-//			});
 
 		};
 	}
